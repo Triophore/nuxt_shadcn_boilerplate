@@ -1,0 +1,12 @@
+
+<script setup lang="ts">
+const colorMode = useColorMode()
+colorMode.preference = 'dark'
+</script>
+<template>
+    <div class="bg-zinc-950 dark:bg-white dark">
+        <v-main>
+                <slot />
+        </v-main>
+    </div>
+</template>
